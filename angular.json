@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "desafio-ng-if": {
+    "clase-04-ngif-ngfor": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/desafio-ng-if",
+            "outputPath": "dist/clase-04-ngif-ngfor",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -60,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "desafio-ng-if:build:production"
+              "browserTarget": "clase-04-ngif-ngfor:build:production"
             },
             "development": {
-              "browserTarget": "desafio-ng-if:build:development"
+              "browserTarget": "clase-04-ngif-ngfor:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "desafio-ng-if:build"
+            "browserTarget": "clase-04-ngif-ngfor:build"
           }
         },
         "test": {
